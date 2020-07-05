@@ -118,7 +118,7 @@ function draw() {
             if (!lives) {
                 alert("GAME OVER");
                 document.location.reload();
-            } else {
+            } else if (lives > 0) {
                 alert(`${lives} more lives left`)
                 x = canvas.width / 2;
                 y = canvas.height - 30;
